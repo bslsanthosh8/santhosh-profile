@@ -1,5 +1,5 @@
 import React from "react";
-import srinadhBirojiResume from "../assets/docs/Srinadh_Biroji_Resume.pdf";
+import resume from "../assets/docs/Resume.pdf";
 
 function Experience() {
   const arrowSVG = (
@@ -20,64 +20,24 @@ function Experience() {
 
   const workExperience = [
     {
-      doj: "JAN 2021",
+      doj: "AUG 2021",
       doe: null,
-      jobTitle: "Lead Software Engineer",
-      company: "Wellsfargo",
+      jobTitle: "Senior Software Engineer",
+      company: "Wells Fargo",
       location: "Hyderabad, India",
-      languages: ["Java", "React", "JavaScript", "Spring Boot", "SQL"],
-      client:
-        "Wellsfargo - Corporate, Commercial and Investment Banking Technology",
+      languages: ["Java 17", "Spring Boot 3.x", "Kafka", "Redis", "MongoDB", "React.js", "OpenShift"],
       description:
-        "Spearheaded the end-to-end modernization of the Fed Funds application, migrating it to the WF-RIA3 framework with React.js and transitioning to PCF cloud, all with a lean team. Delivered high-quality, timely results through strong cross-team collaboration and adherence to Agile best practices.",
-      application: "CEO Fed Funds",
-      appLink: "https://wellsoffice.ceo.wellsfargo.com/",
+        "Designed and developed distributed microservices using Java 17, Spring Boot 3.x, Kafka, Redis, and MongoDB, implementing Event-Driven Architecture, Saga Pattern for distributed transactions, processing 400 TPS with high availability and fault tolerance patterns. Spearheaded the successful migration of critical applications to OpenShift Cloud (OCP), resulting in a 25% reduction in infrastructure costs and improved application uptime to 99.9%. Led the successful migration of the Fed Funds application to the latest WF-RIA3 framework leveraging React.js, delivering results within challenging deadlines. Acted as a Team Lead, mentoring and coaching team of 5+ engineers while driving adoption of Agile best practices, peer code reviews, and CI/CD pipelines across teams, improving code quality and cutting post-release defects by 25%.",
     },
     {
-      doj: "DEC 2018",
-      doe: "DEC 2020",
-      jobTitle: "Software Development Specialist",
-      company: "NTT Data",
+      doj: "2017",
+      doe: "2021",
+      jobTitle: "Software Engineer",
+      company: "DBS Tech",
       location: "Hyderabad, India",
-      languages: ["Java", "JavaScript", "HTML", "CSS", "Spring Boot"],
-      client: "The Hanover Insurance Group",
+      languages: ["React.js", "Spring Boot", "SonarQube"],
       description:
-        "Played a key role in driving the success of critical features for The Hanover Insurance, consistently delivering high-quality, SonarQube-compliant solutions. Led and mentored the team, taking full ownership of projects and ensuring seamless execution to meet business goals and elevate overall performance.",
-      application: "Hanover",
-      appLink: "https://registration.hanover.com/",
-    },
-    {
-      doj: "JUL 2017",
-      doe: "NOV 2018",
-      jobTitle: "Software Engineer II",
-      company: "Wellsfargo",
-      location: "Hyderabad, India",
-      languages: [
-        "Java",
-        "Spring Boot",
-        "Angular",
-        "JavaScript",
-        "HTML",
-        "CSS",
-      ],
-      client: "Wellsfargo - Wealth & Investment Management",
-      description:
-        "Led the delivery of high-quality solutions for Wells Fargo's Wealth & Investment Management division, focusing on retirement services. Recognized for timely code contributions, attention to detail, and seamless execution within Agile sprints.",
-      application: "Customer Channel",
-      appLink: null,
-    },
-    {
-      doj: "AUG 2014",
-      doe: "JUN 2017",
-      jobTitle: "Associate Software Engineer",
-      company: "DXC Technology",
-      location: "Hyderabad, India",
-      languages: ["Java", "Spring", "JSP", "Servlets", "HTML"],
-      client: "Zurich Financial Services",
-      description:
-        "Contributed to code enhancements for Zurich Insurance's General Insurance claims applications (EDEC, P2000WP, EPNA). Recognized for delivering high-quality solutions on time, documenting test cases, and ensuring seamless execution of tasks within deadlines.",
-      application: "EDEC",
-      appLink: null,
+        "Modernized legacy systems using React.js and Spring Boot, improving performance by 45%. Developed and optimized application modules with a focus on performance and scalability. Contributed to the development of advanced application features by writing clean, maintainable code, improving code review turnaround by 30%. Implemented SonarQube compliance across all modules, increasing code quality scores by 40% and cutting technical debt by 20%. Authored detailed test case documentation and actively collaborated with senior developers to adopt best practices. Ensured high-quality sprint deliveries aligned with Agile practices, reducing production defects by 30% and consistently meeting stakeholder commitments.",
     },
   ];
 
@@ -86,8 +46,8 @@ function Experience() {
 
   return (
     <>
-      <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-midnight/35 px-6 py-5 backdrop-blur dark:bg-lightGray/35 md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-        <h2 className="text-sm font-bold uppercase tracking-widest text dark:text-gray-800 lg:sr-only">
+      <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-black/30 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+        <h2 className="text-sm font-bold uppercase tracking-widest text-white lg:sr-only">
           Experience
         </h2>
       </div>
@@ -95,45 +55,26 @@ function Experience() {
         <ol className="group/list">
           {workExperience.map((experience, index) => (
             <li key={index} className="mb-12">
-              <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-gray-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg dark:lg:group-hover:bg-gray-300/20"></div>
+              <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-100">
+                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-gray-800/5 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
                 <header
-                  className="z-10 my-2 text-xs font-semibold uppercase tracking-wide text-mint-800 dark:text-gray-800 sm:col-span-2"
+                  className="z-10 my-2 text-xs font-semibold uppercase tracking-wide text-gray-400 sm:col-span-2"
                   aria-label={tenureAriaLabel(experience)}
                 >
                   {tenureString(experience)}
                 </header>
                 <div className="z-10 sm:col-span-6">
-                  <h3 className="font-medium leading-snug text-mint-200">
+                  <h3 className="font-medium leading-snug text-gray-100">
                     <div>
-                      <a
-                        href={experience.appLink || "#"}
-                        className="group/link flex flex-col items-start text-base font-medium leading-tight text hover:font-semibold hover:text-sagaGreen focus-visible:font-semibold focus-visible:text-sagaGreen dark:text-gray-900 md:flex-row md:items-baseline lg:flex-row lg:items-baseline"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        aria-label="#"
-                        onClick={(e) => {
-                          if (!experience.appLink) e.preventDefault();
-                        }}
-                      >
+                      <span className="group/link flex flex-col items-start text-base font-medium leading-tight text-white hover:font-semibold hover:text-accent focus-visible:font-semibold focus-visible:text-accent md:flex-row md:items-baseline lg:flex-row lg:items-baseline">
                         <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                         <span>
                           {experience.jobTitle}, {experience.company}
                         </span>
-
-                        {experience.appLink && (
-                          <>
-                            <span className="mx-3 hidden h-px w-3 bg-gray-100 pb-0.5 dark:bg-gray-800 md:block lg:block"></span>
-                            <span className="inline-block pt-1.5">
-                              {experience.application}
-                              {arrowSVG}
-                            </span>
-                          </>
-                        )}
-                      </a>
+                      </span>
                     </div>
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed tracking-wide text-mint-800 dark:text-gray-700">
+                  <p className="mt-2 text-sm leading-relaxed tracking-wide text-gray-300">
                     {experience.description}
                   </p>
                   <ul
@@ -142,7 +83,7 @@ function Experience() {
                   >
                     {experience.languages.map((language, index) => (
                       <li key={index} className="mr-1.5 mt-2">
-                        <div className="flex items-center rounded-full border-royalBlue bg-indigo/40 px-3 py-1 text-xs font-medium leading-5 text dark:bg-gray-800/10 dark:text-gray-800">
+                        <div className="flex items-center rounded-full bg-secondary/10 px-3 py-1 text-xs font-medium leading-5 text-secondary">
                           {language}
                         </div>
                       </li>
@@ -155,8 +96,8 @@ function Experience() {
         </ol>
         <div className="mt-12">
           <a
-            href={srinadhBirojiResume}
-            className="group/link inline-flex items-baseline text-base font-medium leading-tight text hover:font-semibold hover:text-mint-100 focus-visible:font-semibold focus-visible:text-mint-100 dark:text-gray-900"
+            href={resume}
+            className="group/link inline-flex items-baseline text-base font-medium leading-tight text-white hover:font-semibold hover:text-accent focus-visible:font-semibold focus-visible:text-accent"
             target="_blank"
             rel="noreferrer noopener"
             aria-label="View Full Résumé (opens in a new tab)"

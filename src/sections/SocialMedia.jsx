@@ -4,7 +4,7 @@ function SocialMedia() {
   const socialMediaLinks = [
     {
       name: "GitHub",
-      url: "https://github.com/birojisrinadh",
+      url: "https://github.com/bslsanthosh8",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +19,7 @@ function SocialMedia() {
     },
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/birojisrinadh/",
+      url: "https://www.linkedin.com/in/bslsanthosh8/",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -34,72 +34,29 @@ function SocialMedia() {
       ariaLabel: "LinkedIn (opens in a new tab)",
     },
     {
-      name: "GMail",
-      url: "mailto:birojisrinadh@gmail.com",
+      name: "Outlook",
+      url: "mailto:bslsanthosh@outlook.com",
       icon: (
         <svg
-          viewBox="0 -31.5 256 256"
-          version="1.1"
           xmlns="http://www.w3.org/2000/svg"
-          fill="none"
+          viewBox="0 0 24 24"
+          fill="currentColor"
           className="h-6 w-6"
-          aria-hidden="true"
         >
-          <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-          <g
-            id="SVGRepo_tracerCarrier"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          ></g>
-          <g id="SVGRepo_iconCarrier">
-            {" "}
-            <g>
-              {" "}
-              <path
-                d="M58.1818182,192.049515 L58.1818182,93.1404244 L27.5066233,65.0770089 L0,49.5040608 L0,174.59497 C0,184.253152 7.82545455,192.049515 17.4545455,192.049515 L58.1818182,192.049515 Z"
-                fill="currentColor"
-              >
-                {" "}
-              </path>{" "}
-              <path
-                d="M197.818182,192.049515 L238.545455,192.049515 C248.203636,192.049515 256,184.224061 256,174.59497 L256,49.5040608 L224.844415,67.3422767 L197.818182,93.1404244 L197.818182,192.049515 Z"
-                fill="currentColor"
-              >
-                {" "}
-              </path>{" "}
-              <polygon
-                fill="currentColor"
-                points="58.1818182 93.1404244 54.0077618 54.4932827 58.1818182 17.5040608 128 69.8676972 197.818182 17.5040608 202.487488 52.4960089 197.818182 93.1404244 128 145.504061"
-              >
-                {" "}
-              </polygon>{" "}
-              <path
-                d="M197.818182,17.5040608 L197.818182,93.1404244 L256,49.5040608 L256,26.2313335 C256,4.64587897 231.36,-7.65957557 214.109091,5.28587897 L197.818182,17.5040608 Z"
-                fill="currentColor"
-              >
-                {" "}
-              </path>{" "}
-              <path
-                d="M0,49.5040608 L26.7588051,69.5731646 L58.1818182,93.1404244 L58.1818182,17.5040608 L41.8909091,5.28587897 C24.6109091,-7.65957557 0,4.64587897 0,26.2313335 L0,49.5040608 Z"
-                fill="currentColor"
-              >
-                {" "}
-              </path>{" "}
-            </g>{" "}
-          </g>
+          <path d="M12.5,12.43L5.2,6.1A2.2,2.2,0,0,1,7.5,5.5h10A2.2,2.2,0,0,1,19.8,6.1ZM4.5,8.23,11.37,14a1.81,1.81,0,0,0,2.26,0L20.5,8.23V16.5A2.2,2.2,0,0,1,18.5,19.1H6.5A2.2,2.2,0,0,1,4.5,16.5Z" />
         </svg>
       ),
-      ariaLabel: "GMail (opens in a new email tab)",
+      ariaLabel: "Outlook (opens in a new email tab)",
     },
   ];
 
   return (
     <ul className="ml-1 mt-8 flex items-center" aria-label={"Social Media"}>
-      {socialMediaLinks.map((link) => (
-        <li key={link.name} className="mr-5 shrink-0 text-xs">
+      {socialMediaLinks.map((link, index) => (
+        <li key={index} className="mr-5 shrink-0 text-xs">
           <a
             href={link.url}
-            className="block text-slate-500 hover:text-slate-200 dark:hover:text-gray-800"
+            className="block text-gray-400 hover:text-white"
             target="_blank"
             rel="noreferrer noopener"
             aria-label={link.ariaLabel}

@@ -1,5 +1,4 @@
 import React from "react";
-import sbPortfolio from "../assets/images/sbportfolio.png";
 
 function Projects() {
   const arrowSVG = (
@@ -37,20 +36,20 @@ function Projects() {
 
   const projects = [
     {
-      title: "Srinadh Portfolio Website (v1)",
+      title: "My Project",
       description:
-        "An old personal portfolio site built with HTML, CSS and JavaScript which showcases my projects, skills, and experience.",
-      techStack: ["HTML", "CSS", "JavaScript"],
-      liveLink: "https://bairojisrinadh.github.io/sbportfolio",
-      githubLink: "https://github.com/bairojisrinadh/sbportfolio",
-      snapshot: sbPortfolio,
+        "This is a placeholder description for your project. You should replace it with your own project details.",
+      techStack: ["React", "Tailwind CSS", "Vite"],
+      liveLink: "#",
+      githubLink: "#",
+      snapshot: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop",
     },
   ];
 
   return (
     <>
-      <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-midnight/35 px-6 py-5 backdrop-blur dark:bg-lightGray/35 md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-        <h2 className="text-sm font-bold uppercase tracking-widest text dark:text-gray-800 lg:sr-only">
+      <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-black/30 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+        <h2 className="text-sm font-bold uppercase tracking-widest text-white lg:sr-only">
           Projects
         </h2>
       </div>
@@ -58,13 +57,13 @@ function Projects() {
         <ul className="group/list">
           {projects.map((project, index) => (
             <li key={index} className="mb-12">
-              <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-gray-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg dark:lg:group-hover:bg-gray-300/20"></div>
+              <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-100">
+                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-gray-800/5 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
                 <div className="z-10 sm:order-2 sm:col-span-6">
                   <h3>
                     <a
                       href={project.liveLink}
-                      className="group/link inline-flex items-baseline text-base font-medium leading-tight text hover:font-semibold hover:text-sagaGreen focus-visible:font-semibold focus-visible:text-sagaGreen dark:text-gray-900"
+                      className="group/link inline-flex items-baseline text-base font-medium leading-tight text-white hover:font-semibold hover:text-accent focus-visible:font-semibold focus-visible:text-accent"
                       target="_blank"
                       rel="noreferrer noopener"
                       aria-label="#"
@@ -76,12 +75,12 @@ function Projects() {
                       </span>
                     </a>
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed tracking-wide text-mint-800 dark:text-gray-700">
+                  <p className="mt-2 text-sm leading-relaxed tracking-wide text-gray-300">
                     {project.description}
                   </p>
                   <a
                     href={project.githubLink}
-                    className="group relative mt-4 inline-flex items-center pb-[2px] text-sm font-medium text hover:text-mint-100 focus-visible:text-mint-100 dark:text-gray-800"
+                    className="group relative mt-4 inline-flex items-center pb-[2px] text-sm font-medium text-white hover:text-accent focus-visible:text-accent"
                     target="_blank"
                     rel="noreferrer noopener"
                     aria-label=""
@@ -95,7 +94,7 @@ function Projects() {
                   >
                     {project.techStack.map((tech, index) => (
                       <li key={index} className="mr-1.5 mt-2">
-                        <div className="flex items-center rounded-full border-royalBlue bg-indigo/40 px-3 py-1 text-xs font-medium leading-5 text dark:bg-gray-800/10 dark:text-gray-800">
+                        <div className="flex items-center rounded-full bg-secondary/10 px-3 py-1 text-xs font-medium leading-5 text-secondary">
                           {tech}
                         </div>
                       </li>
@@ -109,7 +108,7 @@ function Projects() {
                   width={200}
                   height={48}
                   decoding="async"
-                  className="aspect-auto rounded border-2 border-slate-200/30 object-cover text-transparent transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
+                  className="aspect-auto rounded border-2 border-slate-200/10 object-cover text-transparent transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
                 />
               </div>
             </li>
