@@ -36,12 +36,12 @@ function Projects() {
 
   const projects = [
     {
-      title: "My Project",
+      title: "Personal Portfolio",
       description:
-        "This is a placeholder description for your project. You should replace it with your own project details.",
+        "My personal portfolio website, built with React and Tailwind CSS, and deployed with GitHub Pages.",
       techStack: ["React", "Tailwind CSS", "Vite"],
-      liveLink: "#",
-      githubLink: "#",
+      liveLink: "https://bslsanthosh8.github.io/santhosh-profile/",
+      githubLink: "https://github.com/bslsanthosh8/santhosh-profile",
       snapshot: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop",
     },
   ];
@@ -66,7 +66,7 @@ function Projects() {
                       className="group/link inline-flex items-baseline text-base font-medium leading-tight text-white hover:font-semibold hover:text-accent focus-visible:font-semibold focus-visible:text-accent"
                       target="_blank"
                       rel="noreferrer noopener"
-                      aria-label="#"
+                      aria-label={project.title}
                     >
                       <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                       <span>
@@ -83,7 +83,7 @@ function Projects() {
                     className="group relative mt-4 inline-flex items-center pb-[2px] text-sm font-medium text-white hover:text-accent focus-visible:text-accent"
                     target="_blank"
                     rel="noreferrer noopener"
-                    aria-label=""
+                    aria-label="GitHub repository"
                   >
                     {githubIconSVG}Source
                     <span className="absolute -inset-x-0.5 bottom-0 h-[1px] origin-left scale-x-0 transform bg-current transition-transform duration-300 ease-out group-hover:scale-x-105"></span>
