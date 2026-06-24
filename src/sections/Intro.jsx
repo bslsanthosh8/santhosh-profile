@@ -10,7 +10,7 @@ function Intro() {
           <a href="/">Santhosh Bayyavarapu</a>
         </h1>
         <h2 className="mt-3 text-lg font-semibold tracking-tight text-primary sm:text-xl">
-          Senior Java Full Stack Engineer
+          Lead Software Engineer
         </h2>
         <p className="mt-4 max-w-xs leading-normal tracking-normal text-gray-300">
           I design, architect, and deliver enterprise-scale, cloud-native applications.

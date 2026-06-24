@@ -22,7 +22,7 @@ function Experience() {
     {
       doj: "AUG 2021",
       doe: null,
-      jobTitle: "Senior Software Engineer",
+      jobTitle: "Lead Software Engineer",
       company: "Wells Fargo",
       location: "Hyderabad, India",
       languages: ["Java 17", "Spring Boot 3.x", "Kafka", "Redis", "MongoDB", "React.js", "OpenShift"],
