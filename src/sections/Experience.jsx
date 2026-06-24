@@ -32,7 +32,7 @@ function Experience() {
     {
       doj: "2017",
       doe: "2021",
-      jobTitle: "Software Engineer",
+      jobTitle: "Senior Software Engineer",
       company: "DBS Tech",
       location: "Hyderabad, India",
       languages: ["React.js", "Spring Boot", "SonarQube"],
